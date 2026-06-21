@@ -1,0 +1,23 @@
+What ChatGpt sees when we write a prompt:
+4 steps:
+1. Tokenization: the prompt is broken down into tokens: "I love" is broken down to 2 tokens and are assigned some token IDs.
+2. Embedding lookup: the ID is mapped to a vector (each token can more than 12000 vectors (depending on their usage and context.)), the words that are used together commonly are assigned close to each other in vector form (in Embedding space).
+3. Transformer: A Transformer takes token embeddings as input, uses self-attention to determine which tokens are important to each other, updates their representations based on context, and  produces a probability distribution over all possible tokens finally predicts the next token (using softmax: A function that converts raw scores into probabilities that add up to 100%).
+
+
+Artificial Intelligence is the broad field of creating systems that perform tasks requiring human intelligence. Machine Learning is a subset of AI where systems learn patterns from data instead of relying on explicit rules. Deep Learning is a subset of Machine Learning that uses multi-layer neural networks to automatically learn complex representations from large amounts of data. Therefore, all Deep Learning is Machine Learning, and all Machine Learning is AI, but the reverse is not true.
+
+A neural network is a machine learning model inspired by the human brain.
+It consists of interconnected nodes called neurons that learn patterns from data.
+
+Retrieval Augmented Generation (RAG):
+Instead of relying only on what the model learned during training:
+Question
+ ↓
+Search Relevant Documents (stored in vector database)
+ ↓
+Give Documents to LLM
+
+ ↓
+Generate Answer
+
