@@ -21,3 +21,6 @@ Give Documents to LLM
  ↓
 Generate Answer
 
+Start with Deep Agents for a “batteries-included” agent with features like automatic context compression, a virtual filesystem, and subagent-spawning. Deep Agents are built on LangChain agents which you can also use directly.
+Use LangChain (create_agent) for a highly customizable harness, easily tailored to your use case and data.
+Use LangGraph, our low-level orchestration framework, for advanced needs combining deterministic and agentic workflows.
